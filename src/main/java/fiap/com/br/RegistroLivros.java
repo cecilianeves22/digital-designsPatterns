@@ -19,7 +19,6 @@ class NotificacaoEmail implements NotificacaoStrategy {
     public void notificar(RegistroLivros livro) {
         System.out.println("Notificação por Email: O estoque do livro foi atualizado.");
         livro.mostrarInformacoes();
-        // Lógica para enviar um email aqui
     }
 }
 
@@ -29,7 +28,6 @@ class NotificacaoSMS implements NotificacaoStrategy {
     public void notificar(RegistroLivros livro) {
         System.out.println("Notificação por SMS: O estoque do livro foi atualizado.");
         livro.mostrarInformacoes();
-        // Lógica para enviar um SMS aqui
     }
 }
 
@@ -140,7 +138,6 @@ public class RegistroLivros {
         livro1.adicionarObserve(new Observer() {
             @Override
             public void atualizar(RegistroLivros livro) {
-                // Lógica do observador aqui
             }
         });
 
@@ -163,7 +160,6 @@ public class RegistroLivros {
         livro2.adicionarObserve(new Observer() {
             @Override
             public void atualizar(RegistroLivros livro) {
-                // Lógica do observador aqui
             }
         });
 
